@@ -1,0 +1,177 @@
+
+/* =========================
+   GLOBAL BOX MODEL
+========================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #F4F7FA;
+    color: #263445;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* =========================
+   PAGE HEADING CARD
+========================= */
+header {
+    background-color: #FFFFFF;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border: 1px solid #DCE4EC;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(23, 50, 77, 0.05);
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: #17324D;
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+    color: #64748B;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #17324D;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   ADD EXPENSE CARD
+========================= */
+.add-expense-section {
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #DCE4EC;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(23, 50, 77, 0.05);
+}
+
+/* Form labels */
+.add-expense-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* Form inputs */
+.add-expense-section input,
+.add-expense-section select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #DCE4EC;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+
+/* Focus effect */
+.add-expense-section input:focus,
+.add-expense-section select:focus {
+    outline: none;
+    border-color: #159A8C;
+    box-shadow: 0 0 0 3px rgba(21, 154, 140, 0.15);
+}
+
+/* Form button */
+.add-expense-section button {
+    background-color: #159A8C;
+    color: #FFFFFF;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-expense-section button:hover {
+    background-color: #117A70;
+}
+
+/* =========================
+   EXPENSE TABLE CARD
+========================= */
+.expenses-section {
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #DCE4EC;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(23, 50, 77, 0.05);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #DCE4EC;
+}
+
+/* Table header */
+thead {
+    background-color: #17324D;
+    color: #FFFFFF;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #159A8C;
+}
+
+/* Table cells */
+td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #DCE4EC;
+}
+
+/* Alternating rows */
+tbody tr:nth-child(even) {
+    background-color: #F4F7FA;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #E3F4F1;
+}
+
+/* =========================
+   RESPONSIVE LAYOUT
+========================= */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    header,
+    .add-expense-section,
+    .expenses-section {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+}
